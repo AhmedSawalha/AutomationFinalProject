@@ -1,57 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="7" total="17" passed="10" failed="0" skipped="0">
+<testng-results ignored="9" total="10" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-04T02:04:03 EET" name="Default suite" finished-at="2025-05-04T02:04:30 EET" duration-ms="27004">
+  <suite started-at="2025-05-09T00:22:26 EET" name="Default suite" finished-at="2025-05-09T00:22:48 EET" duration-ms="22131">
     <groups>
     </groups>
-    <test started-at="2025-05-04T02:04:03 EET" name="Default test" finished-at="2025-05-04T02:04:30 EET" duration-ms="27004">
+    <test started-at="2025-05-09T00:22:26 EET" name="Default test" finished-at="2025-05-09T00:22:48 EET" duration-ms="22131">
       <class name="AutomationFinalProject.AutomationFinalProject.AppTest">
-        <test-method is-config="true" signature="mySetup()[pri:0, instance:AutomationFinalProject.AutomationFinalProject.AppTest@5e8ac0e1]" started-at="2025-05-04T02:04:03 EET" name="mySetup" finished-at="2025-05-04T02:04:10 EET" duration-ms="6905" status="PASS">
+        <test-method is-config="true" signature="mySetup()[pri:0, instance:AutomationFinalProject.AutomationFinalProject.AppTest@68044f4]" started-at="2025-05-09T00:22:26 EET" name="mySetup" finished-at="2025-05-09T00:22:35 EET" duration-ms="8840" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mySetup -->
-        <test-method signature="ChangeTheWebsiteLanaguage()[pri:8, instance:AutomationFinalProject.AutomationFinalProject.AppTest@5e8ac0e1]" started-at="2025-05-04T02:04:10 EET" name="ChangeTheWebsiteLanaguage" finished-at="2025-05-04T02:04:12 EET" duration-ms="1536" status="PASS">
+        <test-method signature="CheckTheResultsIsretrived()[pri:10, instance:AutomationFinalProject.AutomationFinalProject.AppTest@68044f4]" started-at="2025-05-09T00:22:35 EET" name="CheckTheResultsIsretrived" finished-at="2025-05-09T00:22:48 EET" duration-ms="13148" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[@data-testid='srp_properties_found']"}
+  (Session info: chrome=136.0.7103.93)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.19.0', revision: '5f9cec8963'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [14d9b16a3b3a80ff83c5a8177d8ee914, findElement {using=xpath, value=//span[@data-testid='srp_properties_found']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.93, chrome: {chromedriverVersion: 136.0.7103.92 (cb81a4cc5087..., userDataDir: C:\Users\ahmed\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55619}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55619/devtoo..., se:cdpVersion: 136.0.7103.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 14d9b16a3b3a80ff83c5a8177d8ee914]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@data-testid='srp_properties_found']"}
+  (Session info: chrome=136.0.7103.93)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.19.0', revision: '5f9cec8963'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [14d9b16a3b3a80ff83c5a8177d8ee914, findElement {using=xpath, value=//span[@data-testid='srp_properties_found']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.93, chrome: {chromedriverVersion: 136.0.7103.92 (cb81a4cc5087..., userDataDir: C:\Users\ahmed\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55619}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55619/devtoo..., se:cdpVersion: 136.0.7103.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 14d9b16a3b3a80ff83c5a8177d8ee914
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at AutomationFinalProject.AutomationFinalProject.AppTest.CheckTheResultsIsretrived(AppTest.java:117)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ChangeTheWebsiteLanaguage -->
-        <test-method signature="ChangeTheWebsiteLanaguage()[pri:8, instance:AutomationFinalProject.AutomationFinalProject.AppTest@5e8ac0e1]" started-at="2025-05-04T02:04:12 EET" name="ChangeTheWebsiteLanaguage" finished-at="2025-05-04T02:04:15 EET" duration-ms="3297" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ChangeTheWebsiteLanaguage -->
-        <test-method signature="ChangeTheWebsiteLanaguage()[pri:8, instance:AutomationFinalProject.AutomationFinalProject.AppTest@5e8ac0e1]" started-at="2025-05-04T02:04:15 EET" name="ChangeTheWebsiteLanaguage" finished-at="2025-05-04T02:04:17 EET" duration-ms="2168" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ChangeTheWebsiteLanaguage -->
-        <test-method signature="ChangeTheWebsiteLanaguage()[pri:8, instance:AutomationFinalProject.AutomationFinalProject.AppTest@5e8ac0e1]" started-at="2025-05-04T02:04:17 EET" name="ChangeTheWebsiteLanaguage" finished-at="2025-05-04T02:04:18 EET" duration-ms="1011" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ChangeTheWebsiteLanaguage -->
-        <test-method signature="ChangeTheWebsiteLanaguage()[pri:8, instance:AutomationFinalProject.AutomationFinalProject.AppTest@5e8ac0e1]" started-at="2025-05-04T02:04:18 EET" name="ChangeTheWebsiteLanaguage" finished-at="2025-05-04T02:04:19 EET" duration-ms="1247" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ChangeTheWebsiteLanaguage -->
-        <test-method signature="ChangeTheWebsiteLanaguage()[pri:8, instance:AutomationFinalProject.AutomationFinalProject.AppTest@5e8ac0e1]" started-at="2025-05-04T02:04:19 EET" name="ChangeTheWebsiteLanaguage" finished-at="2025-05-04T02:04:22 EET" duration-ms="2723" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ChangeTheWebsiteLanaguage -->
-        <test-method signature="ChangeTheWebsiteLanaguage()[pri:8, instance:AutomationFinalProject.AutomationFinalProject.AppTest@5e8ac0e1]" started-at="2025-05-04T02:04:22 EET" name="ChangeTheWebsiteLanaguage" finished-at="2025-05-04T02:04:25 EET" duration-ms="2343" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ChangeTheWebsiteLanaguage -->
-        <test-method signature="ChangeTheWebsiteLanaguage()[pri:8, instance:AutomationFinalProject.AutomationFinalProject.AppTest@5e8ac0e1]" started-at="2025-05-04T02:04:25 EET" name="ChangeTheWebsiteLanaguage" finished-at="2025-05-04T02:04:27 EET" duration-ms="2396" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ChangeTheWebsiteLanaguage -->
-        <test-method signature="ChangeTheWebsiteLanaguage()[pri:8, instance:AutomationFinalProject.AutomationFinalProject.AppTest@5e8ac0e1]" started-at="2025-05-04T02:04:27 EET" name="ChangeTheWebsiteLanaguage" finished-at="2025-05-04T02:04:29 EET" duration-ms="2218" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ChangeTheWebsiteLanaguage -->
-        <test-method signature="ChangeTheWebsiteLanaguage()[pri:8, instance:AutomationFinalProject.AutomationFinalProject.AppTest@5e8ac0e1]" started-at="2025-05-04T02:04:29 EET" name="ChangeTheWebsiteLanaguage" finished-at="2025-05-04T02:04:30 EET" duration-ms="970" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ChangeTheWebsiteLanaguage -->
-        <test-method is-config="true" signature="AfterMyTest()[pri:0, instance:AutomationFinalProject.AutomationFinalProject.AppTest@5e8ac0e1]" started-at="2025-05-04T02:04:30 EET" name="AfterMyTest" finished-at="2025-05-04T02:04:30 EET" duration-ms="1" status="PASS">
+        </test-method> <!-- CheckTheResultsIsretrived -->
+        <test-method is-config="true" signature="AfterMyTest()[pri:0, instance:AutomationFinalProject.AutomationFinalProject.AppTest@68044f4]" started-at="2025-05-09T00:22:48 EET" name="AfterMyTest" finished-at="2025-05-09T00:22:48 EET" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMyTest -->

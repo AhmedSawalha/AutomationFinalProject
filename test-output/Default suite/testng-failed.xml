@@ -5,9 +5,9 @@
     <classes>
       <class name="AutomationFinalProject.AutomationFinalProject.AppTest">
         <methods>
-          <include name="ChangeTheWebsiteLanaguage"/>
           <include name="mySetup"/>
           <include name="AfterMyTest"/>
+          <include name="CheckTheResultsIsretrived"/>
         </methods>
       </class> <!-- AutomationFinalProject.AutomationFinalProject.AppTest -->
     </classes>
